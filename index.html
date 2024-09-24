@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abejita</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body  background="fondo back abejita.jpg"  >
+    
+    <div class="grid-container">
+      <img class="grid-item" src="/masonry-layout-master/img/4.jpg" width="230" height="128" />
+      <img class="grid-item" src="/masonry-layout-master/img/1.jpg" width="230" height="300" />
+      <img class="grid-item" src="/masonry-layout-master/img/2.jpg" width="230" height="410" />
+      <img class="grid-item" src="/masonry-layout-master/img/3.jpg" width="230" height="250" />
+      <img class="grid-item" src="/masonry-layout-master/img/9.jpg" width="230" height="180" />
+      <img class="grid-item" src="/masonry-layout-master/img/7.jpg" width="230" height="340" />
+      <img class="grid-item" src="/masonry-layout-master/img/5.jpg" width="230" height="120" />
+      <img class="grid-item" src="/masonry-layout-master/img/10.jpg" width="230" height="215" />
+      <img class="grid-item" src="/masonry-layout-master/img/8.jpg" width="230" height="420" />
+      <img class="grid-item" src="/masonry-layout-master/img/16.jpg" width="230" height="320" />
+      <img class="grid-item" src="/masonry-layout-master/img/6.jpg" width="230" height="153" />
+      <img class="grid-item" src="/masonry-layout-master/img/11.jpg" width="230" height="480" />
+      <img class="grid-item" src="/masonry-layout-master/img/12.jpg" width="230" height="260" />
+      <img class="grid-item" src="/masonry-layout-master/img/13.jpg" width="230" height="450" />
+      <img class="grid-item" src="/masonry-layout-master/img/14.jpg" width="230" height="135" />
+      <img class="grid-item" src="/masonry-layout-master/img/15.jpg" width="230" height="287" />
+      <img class="grid-item" src="/masonry-layout-master/img/faltante .jpg" width="230" height="500" />
+      <img class="grid-item" src="/masonry-layout-master/img/18.jpg" width="230" height="222" />
+      <img class="grid-item" src="/masonry-layout-master/img/17.jpg" width="230" height="321" />
+      <img class="grid-item" src="/masonry-layout-master/img/19.jpg" width="230" height="150" />
+      <img class="grid-item" src="/masonry-layout-master/img/20.jpg" width="230" height="165" />
+      <img class="grid-item" src="/masonry-layout-master/img/21.jpg" width="230" height="305" />
+      <img class="grid-item" src="/masonry-layout-master/img/22.jpg" width="230" height="286" />
+      <img class="grid-item" src="/masonry-layout-master/img/23.jpg" width="230" height="98" />
+      <img class="grid-item" src="/masonry-layout-master/img/faltante 1.jpg" width="230" height="490" />
+      <img class="grid-item" src="/masonry-layout-master/img/24.jpg" width="230" height="124" />
+      <img class="grid-item" src="/masonry-layout-master/img/faltante 2.jpg" width="230" height="510" />
+      <img class="grid-item" src="/masonry-layout-master/img/25.jpg" width="230" height="320" />
+      <img class="grid-item" src="/masonry-layout-master/img/26.jpg" width="230" height="260" />
+    </div>
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script>
+      var elem = document.querySelector(".grid-container");
+      var msnry = new Masonry(elem, {
+        // options
+        itemSelector: ".grid-item",
+        columnWidth: 230,
+        gutter: 20,
+        isFitWidth: true
+      });
+    </script>
+  </body>
+</html>
